@@ -10,18 +10,31 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 public class SplashScreen extends AppCompatActivity {
 
+    private SessionMaintain sessionMaintain;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        sessionMaintain = new SessionMaintain(SplashScreen.this);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this,GetStarted.class);
-                startActivity(intent);
-                Animatoo.INSTANCE.animateSlideLeft(SplashScreen.this);
-                finish();
+               if(sessionMaintain.checksession())
+               {
+                   Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                   startActivity(intent);
+                   Animatoo.INSTANCE.animateSlideLeft(SplashScreen.this);
+                   finish();
+               }
+               else
+               {
+                   Intent intent = new Intent(SplashScreen.this,GetStarted.class);
+                   startActivity(intent);
+                   Animatoo.INSTANCE.animateSlideLeft(SplashScreen.this);
+                   finish();
+               }
             }
         },2000);
 

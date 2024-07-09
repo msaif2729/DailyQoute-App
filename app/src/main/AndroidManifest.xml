@@ -15,6 +15,30 @@
         android:theme="@style/Theme.Qoutes"
         tools:targetApi="31">
         <activity
+            android:name=".TopicQoute"
+            android:exported="false" />
+        <activity
+            android:name=".Content"
+            android:exported="false" />
+        <activity
+            android:name=".Theme"
+            android:exported="false" />
+        <activity
+            android:name=".More"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Favorite"
+            android:exported="false" />
+        <activity
+            android:name=".SelectTheme"
+            android:exported="false" />
+        <activity
+            android:name=".Customize"
+            android:exported="false" />
+        <activity
             android:name=".intro2"
             android:exported="false" />
         <activity

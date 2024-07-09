@@ -6,6 +6,9 @@
     <color name="colorPrimary">#212d32</color>
     <color name="colorPrimaryDark">#192226</color>
     <color name="colorAccent">#29373e</color>
-
-    <color name="lightgray">#7A7F81</color>
+    <color name="lightgray">#3C4C53</color>
+    <color name="brightblue">#26F7FD</color>
+    <color name="lightwhite">#39FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="invisible">#00FFFFFF</color>
 </resources>

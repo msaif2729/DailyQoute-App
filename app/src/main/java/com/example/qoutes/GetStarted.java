@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class GetStarted extends AppCompatActivity {
 
     private Button continue1;
@@ -23,6 +25,7 @@ public class GetStarted extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(GetStarted.this,intro.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(GetStarted.this);
             }
         });
 
