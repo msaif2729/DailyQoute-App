@@ -9,7 +9,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseHandler databaseHandler;
     private DrawerLayout parentRelative;
     boolean liked = false;
-    private ImageView like,share,gotheme,gomore,gofav;
+    private ImageView like,share,gotheme,gomore,gofav,heart;
     private MaterialToolbar topbar;
     public String[] cats;
     RelativeLayout relative;
@@ -152,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
         topbar = (MaterialToolbar) findViewById(R.id.topbar);
         relative = (RelativeLayout) findViewById(R.id.relative);
         relative.setVisibility(View.GONE);
+        heart = (ImageView) findViewById(R.id.heart);
 
         allofthing();
 
@@ -187,6 +190,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Theme", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,SelectTheme.class);
+                startActivity(intent);
+                Animatoo.INSTANCE.animateSlideUp(MainActivity.this);
+                finish();
+
+
+
+
             }
         });
 
@@ -202,25 +213,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        String theme = sessionMaintain.getTheme("key_theme");
-        switch (theme)
-        {
-            case "g" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.g));
-                break;
-            case "e" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.e));
-                break;
-            case "c" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.c));
-                break;
-            case "a" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.a));
-                break;
-            case "i" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.i));
-                break;
-            case "f" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.f));
-                break;
-            default:
-                break;
+        theme();
 
-        }
         Random random = new Random();
         int randint = random.nextInt(ogcat.size());
 
@@ -258,6 +252,15 @@ public class MainActivity extends AppCompatActivity {
     {
         if(!liked)
         {
+            heart.setImageResource(R.drawable.likepop);
+            heart.setVisibility(View.VISIBLE);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    heart.setImageResource(0);
+                    heart.setVisibility(View.GONE);
+                }
+            },1300);
             like.setImageResource(R.drawable.redfavorite_24px);
             liked = true;
             String str = databaseHandler.addliked(txt.getText().toString(),txt1.getText().toString(),"liked");
@@ -351,4 +354,28 @@ public class MainActivity extends AppCompatActivity {
 //        liked = false;
 //        Toast.makeText(this, "start", Toast.LENGTH_SHORT).show();
     }
+
+    public void theme()
+    {
+        String theme = sessionMaintain.getTheme("key_theme");
+        switch (theme)
+        {
+            case "g" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.g));
+                break;
+            case "e" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.e));
+                break;
+            case "c" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.c));
+                break;
+            case "a" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.a));
+                break;
+            case "i" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.i));
+                break;
+            case "f" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.f));
+                break;
+            default:
+                break;
+
+        }
+    }
+
 }
