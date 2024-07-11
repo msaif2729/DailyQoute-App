@@ -34,7 +34,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/g"
+                    android:src="@drawable/nature1"
                     android:scaleType="centerCrop"
                     android:id="@+id/img1"
                     />
@@ -72,7 +72,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/e"
+                    android:src="@drawable/nature2"
                     android:scaleType="centerCrop"
                     android:id="@+id/img2"
                     />
@@ -109,7 +109,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/c"
+                    android:src="@drawable/nature3"
                     android:scaleType="centerCrop"
                     android:id="@+id/img3"
                     />
@@ -158,7 +158,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/a"
+                    android:src="@drawable/nature2"
                     android:scaleType="centerCrop"
                     android:id="@+id/img4"
                     />
@@ -197,7 +197,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/i"
+                    android:src="@drawable/nature3"
                     android:scaleType="centerCrop"
                     android:id="@+id/img5"
                     />
@@ -236,7 +236,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/f"
+                    android:src="@drawable/nature2"
                     android:scaleType="centerCrop"
                     android:id="@+id/img6"
                     />

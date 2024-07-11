@@ -45,6 +45,9 @@ public class TopicQoute extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topic_qoute);
 
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        getWindow().setStatusBarColor(android.graphics.Color.TRANSPARENT);
+
         txt = (TextView) findViewById(R.id.txt);
         txt1 = (TextView) findViewById(R.id.txt1);
         sessionMaintain = new SessionMaintain(TopicQoute.this);

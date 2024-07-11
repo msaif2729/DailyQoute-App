@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class SelectTheme extends AppCompatActivity {
     private RelativeLayout selecttheme;
     private SessionMaintain sessionMaintain;
     private Button gotomain;
+    private ImageView img1,img2,img3,img4,img5,img6;
     private TextView txt1,txt2,txt3,txt4,txt5,txt6;
 
     @Override
@@ -39,6 +41,12 @@ public class SelectTheme extends AppCompatActivity {
         txt4 = findViewById(R.id.txt4);
         txt5 = findViewById(R.id.txt5);
         txt6 = findViewById(R.id.txt6);
+        img1 = findViewById(R.id.img1);
+        img2 = findViewById(R.id.img2);
+        img3 = findViewById(R.id.img3);
+        img4 = findViewById(R.id.img4);
+        img5 = findViewById(R.id.img5);
+        img6 = findViewById(R.id.img6);
 
         selecttheme = findViewById(R.id.selecttheme);
         gotomain = (Button) findViewById(R.id.gotomain);
@@ -63,13 +71,14 @@ public class SelectTheme extends AppCompatActivity {
 
         if (v.getId() == R.id.card1) {
             card1.setChecked(!card1.isChecked());
+            card5.setChecked(false);
             card2.setChecked(false);
             card3.setChecked(false);
             card4.setChecked(false);
-            card5.setChecked(false);
             card6.setChecked(false);
 //            sessionMaintain.themesession("g");
-            callalert(txt1.getText().toString());
+            callalert(txt1.getText().toString());int imgresource=0;
+
         } else if (v.getId() == R.id.card2) {
             card2.setChecked(!card2.isChecked());
             card1.setChecked(false);
@@ -123,6 +132,8 @@ public class SelectTheme extends AppCompatActivity {
         LayoutInflater inflater = getLayoutInflater();
         ShowAlert showAlert = new ShowAlert(SelectTheme.this);
         showAlert.showalert(message,inflater);
+
     }
+
 
 }

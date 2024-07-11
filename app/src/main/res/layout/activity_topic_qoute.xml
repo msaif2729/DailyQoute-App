@@ -25,6 +25,7 @@
                 app:titleTextColor="@color/white"
                 app:navigationIcon="@drawable/close"
                 android:id="@+id/topbar"
+                android:layout_marginTop="@dimen/_25sdp"
                 />
         </com.google.android.material.appbar.AppBarLayout>
 

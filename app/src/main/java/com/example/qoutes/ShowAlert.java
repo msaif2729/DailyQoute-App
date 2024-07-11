@@ -26,7 +26,7 @@ public class ShowAlert {
     private SessionMaintain sessionMaintain;
     private ArrayList<Integer> imageResource;
 
-    String[] themetypes={"Plain","Aesthetic","Nature","Cities","White And Black","Minimalism"};
+    String[] themetypes={"Plain","Aesthetic","Nature","Cities","White","Minimalism"};
     String[] Nature = {"nature1","nature2","nature3","nature4","nature5","nature6"};
     String[] Mimimalism = {"minimal1","minimal2","minimal3","minimal4","minimal5","minimal6"};
 
@@ -151,6 +151,7 @@ public class ShowAlert {
                         img6.setTag(Aesthetic[5]);
                         break;
                     case "White":
+                        Toast.makeText(context, "white", Toast.LENGTH_SHORT).show();
                         for(int i =0; i<White.length;i++)
                         {
 //                            imageResource.clear();

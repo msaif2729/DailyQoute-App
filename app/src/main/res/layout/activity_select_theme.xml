@@ -68,9 +68,10 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/c"
+                        android:src="@drawable/nature1"
                         android:scaleType="centerCrop"
                         android:background="@color/purple"
+                        android:id="@+id/img1"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -110,6 +111,7 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/aesthetic6"
                         android:scaleType="centerCrop"
+                        android:id="@+id/img2"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -147,6 +149,7 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/nature2"
                         android:scaleType="centerCrop"
+                        android:id="@+id/img3"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -196,6 +199,7 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/cities6"
                         android:scaleType="centerCrop"
+                        android:id="@+id/img4"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -235,6 +239,7 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/white1"
                         android:scaleType="centerCrop"
+                        android:id="@+id/img5"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -274,6 +279,7 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/minimal2"
                         android:scaleType="centerCrop"
+                        android:id="@+id/img6"
 
                         />
                     <TextView

@@ -17,4 +17,5 @@
     <color name="yellow">#9AA523</color>
     <color name="pink">#faebd7</color>
     <color name="cream">#82813D</color>
+    <color name="transparent">#68000000</color>
 </resources>
