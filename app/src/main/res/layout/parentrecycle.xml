@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_25sdp">
+
+    <TextView
+        android:id="@+id/parent_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faith &amp; spirituality"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/child_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent_title"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:nestedScrollingEnabled="false"/>
+
+</RelativeLayout>

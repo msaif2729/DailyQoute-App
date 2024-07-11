@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectTheme"
+    android:id="@+id/selecttheme"
+    android:paddingHorizontal="@dimen/_25sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which theme would you like to start with?"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:id="@+id/theme"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your own theme for your Daily Qoutes"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/theme"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/lightgray"
+        android:id="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="@dimen/_15sdp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="@dimen/_25sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:id="@+id/l1"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:backgroundTint="@color/gray"
+                android:onClick="selecttheme">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/c"
+                        android:scaleType="centerCrop"
+                        android:background="@color/purple"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Plain"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:id="@+id/txt1"
+                        android:background="@color/blue"
+                        />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                android:background="@drawable/back"
+                android:layout_toRightOf="@id/card1"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:onClick="selecttheme">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/aesthetic6"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Aesthetic"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:id="@+id/txt2"
+                        />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                android:background="@drawable/back"
+                android:layout_toRightOf="@id/card2"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:onClick="selecttheme">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nature2"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nature"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:id="@+id/txt3"
+                        />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_below="@id/l1"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                android:layout_below="@id/card1"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:onClick="selecttheme"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/cities6"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Cities"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:id="@+id/txt4"
+                        />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                android:background="@drawable/back"
+                android:layout_toRightOf="@id/card4"
+                android:layout_alignTop="@id/card4"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:onClick="selecttheme">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/white1"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="White And Black"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:id="@+id/txt5"
+                        />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp"
+                android:background="@drawable/back"
+                android:layout_toRightOf="@id/card5"
+                android:layout_alignTop="@id/card5"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:onClick="selecttheme"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/minimal2"
+                        android:scaleType="centerCrop"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Minimalism"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:id="@+id/txt6"
+                        />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/gotomain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/buttonback"
+        android:text="Continue"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        />
+
+</RelativeLayout>

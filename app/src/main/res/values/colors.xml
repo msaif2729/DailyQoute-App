@@ -11,4 +11,10 @@
     <color name="lightwhite">#39FFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="invisible">#00FFFFFF</color>
+    <color name="purple">#D2C8EA</color>
+    <color name="blue">#b6dcf2</color>
+    <color name="bottlegreen">#d6ffb7</color>
+    <color name="yellow"> #F5FF86 </color>
+    <color name="pink">#faebd7</color>
+    <color name="cream">#82813D</color>
 </resources>

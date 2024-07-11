@@ -264,12 +264,12 @@ public class MainActivity extends AppCompatActivity {
             like.setImageResource(R.drawable.redfavorite_24px);
             liked = true;
             String str = databaseHandler.addliked(txt.getText().toString(),txt1.getText().toString(),"liked");
-            Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
         }
         else {
             like.setImageResource(R.drawable.favorite_24px);
             String str = databaseHandler.delliked(txt.getText().toString());
-            Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
             liked = false;
         }
     }
@@ -357,25 +357,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void theme()
     {
+        int imgresource=0;
         String theme = sessionMaintain.getTheme("key_theme");
-        switch (theme)
+        if(theme.equals("purple")||theme.equals("pink")||theme.equals("cream")||theme.equals("yellow")||theme.equals("bottlegreen")||theme.equals("blue"))
         {
-            case "g" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.g));
-                break;
-            case "e" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.e));
-                break;
-            case "c" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.c));
-                break;
-            case "a" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.a));
-                break;
-            case "i" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.i));
-                break;
-            case "f" : parentRelative.setBackground(ContextCompat.getDrawable(MainActivity.this,R.drawable.f));
-                break;
-            default:
-                break;
-
+            imgresource = MainActivity.this.getResources().getIdentifier(theme,"color",getPackageName());
         }
+        else {
+            imgresource = MainActivity.this.getResources().getIdentifier(theme,"drawable",getPackageName());
+        }
+        parentRelative.setBackgroundResource(imgresource);
     }
 
 }

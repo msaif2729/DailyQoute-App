@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customize"
+    android:paddingHorizontal="@dimen/_25sdp">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/customize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:id="@+id/img"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's make Daily Qoutes yours"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_below="@id/img"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:id="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text3"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/lightgray"
+        android:id="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <Button
+        android:id="@+id/cont2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_alignLeft="@id/txt1"
+        android:layout_alignRight="@id/txt1"
+        android:text="Continue"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/buttonback"
+        />
+
+
+
+</RelativeLayout>
