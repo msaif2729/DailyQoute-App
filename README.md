@@ -24,21 +24,23 @@ The Daily Quotes App delivers daily inspiration with a wide array of quotes tail
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/977a0180-ade3-47a3-8672-c56646455af2" alt="Screenshot 1" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/ba0f9712-b16f-4749-af8e-04d0f1634802" alt="Screenshot 2" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/881140a4-f244-40cc-b6bd-d62d706a71e8" alt="Screenshot 3" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/9f4630c7-1851-482e-9829-acbc3b09e9a9" alt="Screenshot 4" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/4fda4801-42ba-4750-b695-cf202eca4fef" alt="Screenshot 5" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/7fefa343-b148-42ab-9312-1f2684ed00d8" alt="Screenshot 6" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/5fe4b909-c57d-4435-b6fe-2d368f548c6f" alt="Screenshot 7" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/7a2a080a-2aa5-46f6-ab71-d3f3d59bda36" alt="Screenshot 8" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/c5b6fe07-f9c3-434d-a04e-91a153775095" alt="Screenshot 9" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/c8820cf4-3954-4d01-b713-abac83546751" alt="Screenshot 10" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/ec38b45e-06ef-435e-964d-f8db23baf2bd" alt="Screenshot 11" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/c19cba48-4a25-4129-b216-563c4a6571d6" alt="Screenshot 12" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/e77c1bce-4132-4af1-988a-5a21746a0688" alt="Screenshot 13" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/ab223bf7-35cc-438f-aaaf-edd01bf34849" alt="Screenshot 14" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
-<img src="https://github.com/user-attachments/assets/49f39059-95b4-454b-9b2d-d766d302ce49" alt="Screenshot 15" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/ba0f9712-b16f-4749-af8e-04d0f1634802" alt="Screenshot 2" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/881140a4-f244-40cc-b6bd-d62d706a71e8" alt="Screenshot 3" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/9f4630c7-1851-482e-9829-acbc3b09e9a9" alt="Screenshot 4" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/4fda4801-42ba-4750-b695-cf202eca4fef" alt="Screenshot 5" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/7fefa343-b148-42ab-9312-1f2684ed00d8" alt="Screenshot 6" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/5fe4b909-c57d-4435-b6fe-2d368f548c6f" alt="Screenshot 7" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/7a2a080a-2aa5-46f6-ab71-d3f3d59bda36" alt="Screenshot 8" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/c5b6fe07-f9c3-434d-a04e-91a153775095" alt="Screenshot 9" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/c8820cf4-3954-4d01-b713-abac83546751" alt="Screenshot 10" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/ec38b45e-06ef-435e-964d-f8db23baf2bd" alt="Screenshot 11" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/c19cba48-4a25-4129-b216-563c4a6571d6" alt="Screenshot 12" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/e77c1bce-4132-4af1-988a-5a21746a0688" alt="Screenshot 13" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/ab223bf7-35cc-438f-aaaf-edd01bf34849" alt="Screenshot 14" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+    <img src="https://github.com/user-attachments/assets/49f39059-95b4-454b-9b2d-d766d302ce49" alt="Screenshot 15" width="200" style="border: 2px solid #000000; margin-right: 15px; margin-bottom: 10px;">
+</div>
+
 
 ## Clone the repository
  ```bash
