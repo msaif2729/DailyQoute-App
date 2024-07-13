@@ -6,6 +6,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Build;
@@ -26,6 +30,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 
@@ -161,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
         heart = (ImageView) findViewById(R.id.heart);
 
         allofthing();
+        sendqoute();
 
     }
 
@@ -168,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     {
         show();
         Log.d("Mohammed Saif",Arrays.toString(ogcat.toArray()));
-        Toast.makeText(this, Arrays.toString(ogcat.toArray()), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, Arrays.toString(ogcat.toArray()), Toast.LENGTH_SHORT).show();
 
         gomore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -222,20 +228,26 @@ public class MainActivity extends AppCompatActivity {
         Random random = new Random();
         int randint = random.nextInt(ogcat.size());
 
-
-
         RetrofitClass1.getApiService().getRandomQoute(ogcat.get(randint)).enqueue(new Callback<List<MyApiData>>() {
             @Override
             public void onResponse(Call<List<MyApiData>> call, Response<List<MyApiData>> response) {
                 if(response.isSuccessful())
                 {
                     relative.setVisibility(View.VISIBLE);
-                    List<MyApiData> data = response.body();
+                    if(getIntent().hasExtra("qoute1"))
+                    {
+                        txt.setText(getIntent().getStringExtra("qoute1"));
+                        txt1.setText("-"+getIntent().getStringExtra("author1"));
+                    }
+                    else {
+                        List<MyApiData> data = response.body();
 //                    Toast.makeText(MainActivity.this, categories[randint], Toast.LENGTH_SHORT).show();
-                    txt.setText(response.body().get(0).getQuote());
-                    txt1.setText("-"+response.body().get(0).getAuthor());
-                }
+                        txt.setText(response.body().get(0).getQuote());
+                        txt1.setText("-"+response.body().get(0).getAuthor());
+                        }
+                   }
             }
+
 
             @Override
             public void onFailure(Call<List<MyApiData>> call, Throwable throwable) {
@@ -376,4 +388,39 @@ public class MainActivity extends AppCompatActivity {
         parentRelative.setBackgroundResource(imgresource);
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if(intent.hasExtra("qoute1"))
+        {
+            txt.setText(intent.getStringExtra("qoute1"));
+            txt1.setText("-"+intent.getStringExtra("author1"));
+            Toast.makeText(this, intent.getStringExtra("qoute1"), Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "saif", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @SuppressLint("ScheduleExactAlarm")
+    public void sendqoute()
+    {
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(this, Receiver.class);
+
+        Random random = new Random();
+        int randint = random.nextInt(ogcat.size());
+        intent.putExtra("query",ogcat.get(randint));
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, 11);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        long alarmTimeMillis = 86400000;
+
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(), pendingIntent);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),alarmTimeMillis,pendingIntent);
+
+    }
 }

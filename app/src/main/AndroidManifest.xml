@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
 
     <application
         android:allowBackup="true"
@@ -14,15 +19,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Qoutes"
         tools:targetApi="31">
+
+        <receiver android:name=".Receiver"/>
+
         <activity
             android:name=".TopicQoute"
             android:exported="false" />
         <activity
             android:name=".Content"
             android:exported="false" />
-        <activity
-            android:name=".Theme"
-            android:exported="false" />
+
         <activity
             android:name=".More"
             android:exported="false" />
@@ -48,6 +54,7 @@
             android:name=".GetStarted"
             android:exported="false" />
         <activity
+            android:launchMode="singleTop"
             android:name=".MainActivity"
             android:exported="false" />
         <activity

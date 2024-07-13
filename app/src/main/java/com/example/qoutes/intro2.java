@@ -40,6 +40,7 @@ public class intro2 extends AppCompatActivity {
         }
         startActivity(intent);
         Animatoo.INSTANCE.animateSlideLeft(intro2.this);
+        finish();
 
     }
 

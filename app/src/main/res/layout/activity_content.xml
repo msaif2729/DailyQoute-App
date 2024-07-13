@@ -44,7 +44,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Select all topics that interext you"
+                    android:text="Select all topics that interest you"
                     android:gravity="start"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                     android:fontFamily="@font/poppinsbold"

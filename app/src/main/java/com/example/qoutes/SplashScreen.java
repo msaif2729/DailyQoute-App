@@ -26,6 +26,7 @@ public class SplashScreen extends AppCompatActivity {
                    Intent intent = new Intent(SplashScreen.this,MainActivity.class);
                    startActivity(intent);
                    Animatoo.INSTANCE.animateSlideLeft(SplashScreen.this);
+//                   NotificationHelper.createNotification(SplashScreen.this,"response.body().get(0).getAuthor()","response.body().get(0).getQuote()");
                    finish();
                }
                else
